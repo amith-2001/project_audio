@@ -1,0 +1,132 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.12" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="109">
+            <item index="0" class="java.lang.String" itemvalue="streamlit" />
+            <item index="1" class="java.lang.String" itemvalue="llama-index-tools-cassandra" />
+            <item index="2" class="java.lang.String" itemvalue="llama-index-embeddings-openai" />
+            <item index="3" class="java.lang.String" itemvalue="langchain-community" />
+            <item index="4" class="java.lang.String" itemvalue="Pygments" />
+            <item index="5" class="java.lang.String" itemvalue="langchain" />
+            <item index="6" class="java.lang.String" itemvalue="lxml" />
+            <item index="7" class="java.lang.String" itemvalue="llama-index-readers-llama-parse" />
+            <item index="8" class="java.lang.String" itemvalue="portalocker" />
+            <item index="9" class="java.lang.String" itemvalue="transformers" />
+            <item index="10" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="11" class="java.lang.String" itemvalue="langchain-google-genai" />
+            <item index="12" class="java.lang.String" itemvalue="git-python" />
+            <item index="13" class="java.lang.String" itemvalue="attrs" />
+            <item index="14" class="java.lang.String" itemvalue="psutil" />
+            <item index="15" class="java.lang.String" itemvalue="openai" />
+            <item index="16" class="java.lang.String" itemvalue="flatbuffers" />
+            <item index="17" class="java.lang.String" itemvalue="google-ai-generativelanguage" />
+            <item index="18" class="java.lang.String" itemvalue="platformdirs" />
+            <item index="19" class="java.lang.String" itemvalue="llama-index-multi-modal-llms-openai" />
+            <item index="20" class="java.lang.String" itemvalue="llama-index-llms-azure-openai" />
+            <item index="21" class="java.lang.String" itemvalue="httpcore" />
+            <item index="22" class="java.lang.String" itemvalue="referencing" />
+            <item index="23" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="24" class="java.lang.String" itemvalue="langchain-openai" />
+            <item index="25" class="java.lang.String" itemvalue="llama-index-embeddings-langchain" />
+            <item index="26" class="java.lang.String" itemvalue="llama-index-llms-bedrock" />
+            <item index="27" class="java.lang.String" itemvalue="llama-index-program-openai" />
+            <item index="28" class="java.lang.String" itemvalue="numpy" />
+            <item index="29" class="java.lang.String" itemvalue="pyasn1" />
+            <item index="30" class="java.lang.String" itemvalue="requests" />
+            <item index="31" class="java.lang.String" itemvalue="bitarray" />
+            <item index="32" class="java.lang.String" itemvalue="llama-index-embeddings-azure-openai" />
+            <item index="33" class="java.lang.String" itemvalue="azure-identity" />
+            <item index="34" class="java.lang.String" itemvalue="llama-index-indices-managed-llama-cloud" />
+            <item index="35" class="java.lang.String" itemvalue="llama-index-vector-stores-astra-db" />
+            <item index="36" class="java.lang.String" itemvalue="langchain-google-vertexai" />
+            <item index="37" class="java.lang.String" itemvalue="zipp" />
+            <item index="38" class="java.lang.String" itemvalue="tenacity" />
+            <item index="39" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="40" class="java.lang.String" itemvalue="pyarrow" />
+            <item index="41" class="java.lang.String" itemvalue="annotated-types" />
+            <item index="42" class="java.lang.String" itemvalue="importlib_metadata" />
+            <item index="43" class="java.lang.String" itemvalue="scipy" />
+            <item index="44" class="java.lang.String" itemvalue="llamaindex-py-client" />
+            <item index="45" class="java.lang.String" itemvalue="msal" />
+            <item index="46" class="java.lang.String" itemvalue="llama-index-core" />
+            <item index="47" class="java.lang.String" itemvalue="tornado" />
+            <item index="48" class="java.lang.String" itemvalue="google-auth-oauthlib" />
+            <item index="49" class="java.lang.String" itemvalue="pyasn1_modules" />
+            <item index="50" class="java.lang.String" itemvalue="llama-index-legacy" />
+            <item index="51" class="java.lang.String" itemvalue="jsonpointer" />
+            <item index="52" class="java.lang.String" itemvalue="torch" />
+            <item index="53" class="java.lang.String" itemvalue="watchdog" />
+            <item index="54" class="java.lang.String" itemvalue="langchain-core" />
+            <item index="55" class="java.lang.String" itemvalue="llama-index" />
+            <item index="56" class="java.lang.String" itemvalue="ragstack-ai" />
+            <item index="57" class="java.lang.String" itemvalue="googleapis-common-protos" />
+            <item index="58" class="java.lang.String" itemvalue="huggingface-hub" />
+            <item index="59" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="60" class="java.lang.String" itemvalue="ragstack-ai-langchain" />
+            <item index="61" class="java.lang.String" itemvalue="llama-index-llms-anthropic" />
+            <item index="62" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="63" class="java.lang.String" itemvalue="llama-index-embeddings-gemini" />
+            <item index="64" class="java.lang.String" itemvalue="fsspec" />
+            <item index="65" class="java.lang.String" itemvalue="llama-index-agent-openai" />
+            <item index="66" class="java.lang.String" itemvalue="filelock" />
+            <item index="67" class="java.lang.String" itemvalue="safetensors" />
+            <item index="68" class="java.lang.String" itemvalue="anthropic" />
+            <item index="69" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="70" class="java.lang.String" itemvalue="sympy" />
+            <item index="71" class="java.lang.String" itemvalue="litellm" />
+            <item index="72" class="java.lang.String" itemvalue="tokenizers" />
+            <item index="73" class="java.lang.String" itemvalue="wrapt" />
+            <item index="74" class="java.lang.String" itemvalue="langchain-nvidia-ai-endpoints" />
+            <item index="75" class="java.lang.String" itemvalue="llama-index-vector-stores-cassandra" />
+            <item index="76" class="java.lang.String" itemvalue="striprtf" />
+            <item index="77" class="java.lang.String" itemvalue="ninja" />
+            <item index="78" class="java.lang.String" itemvalue="llama-parse" />
+            <item index="79" class="java.lang.String" itemvalue="colbert-ai" />
+            <item index="80" class="java.lang.String" itemvalue="ragstack-ai-colbert" />
+            <item index="81" class="java.lang.String" itemvalue="llama-index-multi-modal-llms-gemini" />
+            <item index="82" class="java.lang.String" itemvalue="ragstack-ai-llamaindex" />
+            <item index="83" class="java.lang.String" itemvalue="llama-index-cli" />
+            <item index="84" class="java.lang.String" itemvalue="llama-index-embeddings-bedrock" />
+            <item index="85" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="86" class="java.lang.String" itemvalue="dirtyjson" />
+            <item index="87" class="java.lang.String" itemvalue="jsonschema-specifications" />
+            <item index="88" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="89" class="java.lang.String" itemvalue="google-generativeai" />
+            <item index="90" class="java.lang.String" itemvalue="rpds-py" />
+            <item index="91" class="java.lang.String" itemvalue="unstructured" />
+            <item index="92" class="java.lang.String" itemvalue="urllib3" />
+            <item index="93" class="java.lang.String" itemvalue="Flask" />
+            <item index="94" class="java.lang.String" itemvalue="llama-index-readers-file" />
+            <item index="95" class="java.lang.String" itemvalue="importlib_resources" />
+            <item index="96" class="java.lang.String" itemvalue="prompt_toolkit" />
+            <item index="97" class="java.lang.String" itemvalue="msal-extensions" />
+            <item index="98" class="java.lang.String" itemvalue="llama-index-llms-vertex" />
+            <item index="99" class="java.lang.String" itemvalue="llama-index-question-gen-openai" />
+            <item index="100" class="java.lang.String" itemvalue="tqdm" />
+            <item index="101" class="java.lang.String" itemvalue="llama-index-llms-gemini" />
+            <item index="102" class="java.lang.String" itemvalue="aiohttp" />
+            <item index="103" class="java.lang.String" itemvalue="langchain-text-splitters" />
+            <item index="104" class="java.lang.String" itemvalue="llama-index-llms-openai" />
+            <item index="105" class="java.lang.String" itemvalue="azure-core" />
+            <item index="106" class="java.lang.String" itemvalue="tensorflow-gpu" />
+            <item index="107" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="108" class="java.lang.String" itemvalue="librosa" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
