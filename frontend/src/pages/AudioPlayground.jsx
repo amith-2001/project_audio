@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import SoundFabric from "../components/SoundFabric";
 import SineCanvas from "../components/SineCanvas";
+
 import { Link } from "react-router-dom";
 
 export default function AudioPlayground() {
@@ -46,6 +47,7 @@ export default function AudioPlayground() {
       { name: "🌊 Wave Room", path: "/audioplayground/waveroom" },
       { name: "🎚 Frequency Cave", path: "/audioplayground/frequencycave" },
       { name: "🕒 Time Chamber", path: "/audioplayground/timechamber" },
+      { name: "🕒 Neural Garden", path: "/audioplayground/timechamber" },
     ].map((section, i) => (
       <motion.div
         key={section.name}

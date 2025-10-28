@@ -4,6 +4,7 @@ import AudioPlayground from "./pages/AudioPlayground";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import WaveRoom from "./pages/WaveRoom";
 
 export default function App() {
   return (
@@ -14,6 +15,12 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Audio Playground Routes */}
+        <Route path="/audioplayground" element={<AudioPlayground />} />
+        <Route path="/audioplayground/waveroom" element={<WaveRoom />} />
+
+
       </Routes>
     </BrowserRouter>
   );

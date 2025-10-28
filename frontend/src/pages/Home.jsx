@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import SoundFabric from "../components/SoundFabric";
+import Equations from "../components/Equations";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       {/* Background particles (dimmed) */}
       <div className="absolute inset-0 z-10 opacity-50">
         <SoundFabric />
+        <Equations />
       </div>
 
 
