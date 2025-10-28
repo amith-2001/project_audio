@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import WaveRoom from "./pages/WaveRoom";
+import ChatBot from "./components/ChatBot";
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
         {/* Audio Playground Routes */}
         <Route path="/audioplayground" element={<AudioPlayground />} />
         <Route path="/audioplayground/waveroom" element={<WaveRoom />} />
+
+        {/* <ChatBot /> */}
 
 
       </Routes>
