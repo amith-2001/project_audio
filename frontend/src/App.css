@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+.tooltip {
+  backdrop-filter: blur(6px);
+  background: rgba(30, 41, 59, 0.85);
+  color: #f1f5f9;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  font-size: 13px;
+  line-height: 1.4;
+}

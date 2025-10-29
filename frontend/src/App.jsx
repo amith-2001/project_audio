@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import WaveRoom from "./pages/WaveRoom";
 import ChatBot from "./components/ChatBot";
 import FrequencyCave from "./pages/FrequencyCave";
+import FeatureForge from "./pages/FeatureForge";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/audioplayground/waveroom" element={<WaveRoom />} />
 
         <Route path="/audioplayground/frequencycave" element={<FrequencyCave />} />
+        <Route path="/audioplayground/featureforge" element={<FeatureForge />} />
 
 
 

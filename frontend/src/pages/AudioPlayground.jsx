@@ -44,10 +44,11 @@ export default function AudioPlayground() {
       <div className="absolute inset-0 z-30 flex items-center justify-center translate-y-20">
   <div className="flex flex-row justify-around items-center w-full max-w-5xl pointer-events-auto">
     {[
-      { name: "🌊 Wave Room", path: "/audioplayground/waveroom" },
-      { name: "🎚 Frequency Cave", path: "/audioplayground/frequencycave" },
-      { name: "🕒 Time Chamber", path: "/audioplayground/timechamber" },
-      { name: "🕒 Neural Garden", path: "/audioplayground/timechamber" },
+      { name: "Wave Room", path: "/audioplayground/waveroom" },
+      { name: "Frequency Cave", path: "/audioplayground/frequencycave" },
+      { name: "Time Chamber", path: "/audioplayground/timechamber" },
+      { name: "Feature Forge", path: "/audioplayground/featureforge" },
+      
     ].map((section, i) => (
       <motion.div
         key={section.name}

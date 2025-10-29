@@ -1,24 +1,46 @@
-from flask import Flask
-from flask_cors import CORS
+from flask import Flask, request, jsonify
+from flask_cors import CORS  # ✅ Import this
+import librosa
+import numpy as np
+import os
+from utils.feature_extractor import extract_features_array
+import io
+import soundfile as sf
 
+import os
 app = Flask(__name__)
-CORS(app)
 
-# Import routes
-from api.routes_wave import wave_bp
-from api.routes_fft import fft_bp
-from api.routes_stft import stft_bp
-from api.routes_mel import mel_bp
-from api.routes_noise import noise_bp
-from api.routes_model import model_bp
 
-# Register Blueprints
-app.register_blueprint(wave_bp, url_prefix="/api/wave")
-app.register_blueprint(fft_bp, url_prefix="/api/fft")
-app.register_blueprint(stft_bp, url_prefix="/api/stft")
-app.register_blueprint(mel_bp, url_prefix="/api/mel")
-app.register_blueprint(noise_bp, url_prefix="/api/noise")
-app.register_blueprint(model_bp, url_prefix="/api/model")
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB
+
+
+#Enable CORS for your frontend
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+UPLOAD_FOLDER = "uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+
+@app.route("/analyze", methods=["POST"])
+def analyze_audio():
+    file = request.files["audio"]
+    filename = file.filename
+    save_path = os.path.join(UPLOAD_FOLDER, filename)
+
+    file.save(save_path)
+
+    #load the saved file with librosa (handles mp3, wav, etc.)
+    y, sr = librosa.load(save_path, sr=None)
+
+    # print("done with this")
+
+    # ✅ Extract features
+    features = extract_features_array(y, sr)
+
+    # print(features)
+    os.remove(save_path)  #Clean up after processing
+
+    return jsonify(features)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True)
