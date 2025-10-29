@@ -4,12 +4,16 @@ import WaveformViewer from "../components/WaveformViewer";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css"
+import MfccHeatmap from "../components/MfccHeatmap";
+
 
 export default function FeatureForge() {
   const [file, setFile] = useState(null);
   const [fileUrl, setFileUrl] = useState(null);
   const [features, setFeatures] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [showMfcc, setShowMfcc] = useState(false);
+
 
   const handleUpload = async (e) => {
     const f = e.target.files[0];
@@ -75,8 +79,21 @@ export default function FeatureForge() {
           onChange={handleUpload}
           className="mb-4 text-gray-300"
         />
+{/* Show waveform or MFCC based on toggle */}
+{fileUrl && !showMfcc && <WaveformViewer audioUrl={fileUrl} />}
+{features && showMfcc && <MfccHeatmap mfcc={features.mfcc_full} />}
 
-        {fileUrl && <WaveformViewer audioUrl={fileUrl} />}
+{features && (
+  <div className="flex gap-4 mt-4">
+    <button
+      onClick={() => setShowMfcc(!showMfcc)}
+      className="px-4 py-2 bg-gray-700 rounded-lg hover:bg-gray-600 text-sm"
+    >
+      {showMfcc ? "🎧 Show Waveform" : "🎹 Show MFCC Heatmap"}
+    </button>
+  </div>
+)}
+
 
         {loading && <p className="mt-4 text-sm text-gray-400">Analyzing...</p>}
 
@@ -139,7 +156,8 @@ export default function FeatureForge() {
         >
           MFCCs:
         </span>{" "}
-        {features.mfcc.slice(0, 5).map(v => v.toFixed(2)).join(", ")} ...
+        {features.mfcc_mean.slice(0, 5).map(v => v.toFixed(2)).join(", ")} ...
+
       </li>
     </ul>
 

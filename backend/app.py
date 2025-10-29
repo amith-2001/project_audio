@@ -32,12 +32,12 @@ def analyze_audio():
     #load the saved file with librosa (handles mp3, wav, etc.)
     y, sr = librosa.load(save_path, sr=None)
 
-    # print("done with this")
+    print("done with this")
 
     # ✅ Extract features
     features = extract_features_array(y, sr)
 
-    # print(features)
+    print(features)
     os.remove(save_path)  #Clean up after processing
 
     return jsonify(features)
