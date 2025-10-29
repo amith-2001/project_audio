@@ -13,6 +13,7 @@ export default function FeatureForge() {
   const [features, setFeatures] = useState(null);
   const [loading, setLoading] = useState(false);
   const [showMfcc, setShowMfcc] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL;
 
 
   const handleUpload = async (e) => {
@@ -25,7 +26,7 @@ export default function FeatureForge() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:5000/analyze", {
+      const res = await fetch(`${API_URL}/analyze`, {
         method: "POST",
         body: formData,
       });

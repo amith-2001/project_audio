@@ -17,6 +17,7 @@ export default function TimeChamber() {
   const waveformContainer = useRef(null);
   const [playTime, setPlayTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   // Handle audio upload
   const handleFileChange = (e) => {
@@ -51,7 +52,7 @@ export default function TimeChamber() {
     formData.append("mode", mode);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/stft", {
+      const res = await fetch(`${API_URL}/stft`, {
         method: "POST",
         body: formData,
       });
