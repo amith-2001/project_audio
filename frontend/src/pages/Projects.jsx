@@ -1,30 +1,81 @@
 import { motion } from "framer-motion";
 
 const projects = [
+    {
+    "title": "Research-Temporal_LTU",
+    "desc": "Enhancing the LTU audio-language model for temporal marine audio segmentation and classification (ships vs marine mammals) with physics-based dataset augmentations and LoRA fine-tuning.",
+    "tech": ["Python", "Hugging Face Transformers", "LoRA", "Audio signal processing"],  // from README system summary :contentReference[oaicite:9]{index=9}
+    "link": "https://github.com/amith-2001/Research-Temporal_LTU"
+  },
+    {
+    "title": "Demon (DeMonS)",
+    "desc": "DeMonS – Deforestation Monitoring System: audio-based hardware nodes (Raspberry Pi + Node MCU) detect illegal tree-cutting via AI-processed audio/mel-spectrogram and web UI.",
+    "tech": ["Python", "Raspberry Pi", "Node MCU", "Audio processing / Deep Learning"],  // from README hardware + system description :contentReference[oaicite:7]{index=7}
+    "link": "https://github.com/amith-2001/Demon"
+  },
+
   {
-    title: "Audio Playground",
-    desc: "Interactive environment visualizing Fourier transforms and STFT in real time.",
-    tech: ["React", "Three.js", "Tone.js", "Tailwind"],
-    link: "/audioplayground",
+  title: "Avocado & Host",
+  desc: "AI-driven podcast generator that transforms trending Reddit and Twitter topics into engaging, character-based podcasts. Supports dynamic voice synthesis, multi-host formats, and unbiased content curation for news and discussions.",
+  tech: ["Golang", "Python", "Next.js", "MongoDB", "OpenAI", "ElevenLabs", "PyDub", "Render"],
+  link: "https://github.com/amith-2001/avocado_and_host",
+  },
+
+  {
+    "title": "OCT4LLM",
+    "desc": "One-Click Tool for LLMs — simplifies fine-tuning and deployment of large language models by converting unstructured to structured data and wrapping the pipeline in Docker.",
+    "tech": ["Docker", "Python", "PyTorch", "LLM fine-tuning pipeline"],  // deduced from install & overview :contentReference[oaicite:5]{index=5}
+    "link": "https://github.com/amith-2001/OCT4LLM"
+  },
+
+  {
+  title: "Automated SLM Training Pipeline",
+  desc: "Streamlined web app for training small n-gram language models. Allows users to upload text or PDFs, train predictive models, test next-word predictions, and download trained models — all with minimal computational cost.",
+  tech: ["Python", "Streamlit", "NLTK", "PyPDF2", "Pickle"],
+  link: "https://github.com/amith-2001/automated_slm_training_pipeline",
+  },
+
+
+  {
+    "title": "BuzzFeeds.Ai",
+    "desc": "Transform the way you consume information with BuzzFeeds.Ai — personalized content, multi-channel accessibility and interactive text summarisation via a web UI. ",
+    "tech": ["Python", "Streamlit", "OpenAI API", "Fal.ai API", "Vertex AI (Gemini)"],  // inferred from README :contentReference[oaicite:1]{index=1}
+    "link": "https://github.com/amith-2001/BuzzFeeds.Ai"
   },
   {
-    title: "LTU Fine-Tuning",
-    desc: "Fine-tuned LTU for ship-noise classification using DeepShip and WHOI datasets.",
-    tech: ["PyTorch", "LoRA", "Hugging Face", "W&B"],
-    link: "https://github.com/amith-2001/LTU-finetune",
+    "title": "Presently",
+    "desc": "A prototype that redefines presentation creation: upload data, get graph recommendations via Snowflake Arctic, automatically generate E-charts code using GPT-4, with a Streamlit frontend.",
+    "tech": ["Python", "Streamlit", "Snowflake Arctic", "OpenAI GPT-4"],  // from README features list :contentReference[oaicite:3]{index=3}
+    "link": "https://github.com/amith-2001/Presently"
+  },
+
+
+
+
+  {
+  title: "LDKIC",
+  desc: "Interactive Streamlit app powered by OpenAI API that demonstrates intelligent content generation or analysis through a clean and responsive interface.",
+  tech: ["Python", "OpenAI API", "Streamlit"],
+  link: "https://github.com/amith-2001/LDKIC",
   },
   {
-    title: "Smart Cane",
-    desc: "Embedded AI navigation system for visually impaired users.",
-    tech: ["Raspberry Pi", "OpenCV", "Flask"],
-    link: "https://github.com/amith-2001/smart-cane",
+  title: "World-Wide CO2 Emissions",
+  desc: "Interactive data visualization dashboard showcasing global CO₂ emission trends across countries and years. Combines geospatial analysis with dynamic charts to highlight environmental impact patterns.",
+  tech: ["Python", "Pandas", "GeoPandas", "NumPy", "D3.js", "ECharts"],
+  link: "https://github.com/amith-2001/World-Wide-CO2-Emissions",
   },
+
+
+
+
+
   {
-    title: "MarketFit Analyzer",
-    desc: "NLP-powered Reddit analyzer for startup product-market fit.",
-    tech: ["Python", "FastAPI", "React"],
-    link: "https://github.com/amith-2001/MarketFit-Analyzer",
+    title: "Cyber-Cop",
+    desc: "API service that detects sexual/violent content in video/audio and auto-classifies/censors media for social platforms, CCTV, and institutional filters.",
+    tech: ["Python", "REST API", "VGG16", "Computer Vision", "TensorFlow/Keras", "OpenCV"],
+    link: "https://github.com/amith-2001/Cyber-Cop",
   },
+
 ];
 
 export default function Projects() {

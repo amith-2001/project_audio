@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # ✅ Import this
+from flask_cors import CORS  
 import librosa
 import numpy as np
 import os
@@ -33,12 +33,12 @@ def analyze_audio():
     #load the saved file with librosa (handles mp3, wav, etc.)
     y, sr = librosa.load(save_path, sr=None)
 
-    print("done with this")
+    # print("done with this")
 
-    # ✅ Extract features
+    # Extract features
     features = extract_features_array(y, sr)
 
-    print(features)
+    # print(features)
     os.remove(save_path)  #Clean up after processing
 
     return jsonify(features)
@@ -67,4 +67,5 @@ def stft_analysis():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    from flask_cors import CORS
+    app.run(host="0.0.0.0", port=5000)
